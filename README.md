@@ -2,230 +2,123 @@
 
 ![EASY VISIT](src/images/easyvisit.png)
 
-## Preámbulo
+# El problema :boom:
 
-El registro de visitantes en una empresa en América Latina es un proceso tedioso
-y manual. Lo común es que una persona esté en la recepción tomando nota - a
-veces con papel y lápiz - de cada visitante. Por razones de seguridad,
-usualmente piden a cada visitante dejar una identificación. Si vivimos en la era
-digital, ¿por qué seguimos registrando visitantes como si fuera 1985? ¿Qué tal
-si sustituimos a la persona en recepción por una tablet? ¿Qué tal si en lugar de
-pedir una identificación, tomamos una foto? ...
+En el mundo tecnológico en el que vivimos hoy día las estaciones de trabajo son conformadas por una comunidad de emprendedores y creativos, adoptando el nombre de **coworking** tienen como principales objetivos reflejar una imagen de sinergia y productividad.
 
-## Documentación y desarrollo
+Sin embargo en muchos de estos lugares el proceso de registro de visitantes es tedioso lo cual da una imagen anticuada a la empresas y causa problemas como perdidas de documentos de identidad y en varias ocasiones una larga espera en recepción que retrasa los horarios de citas asignados anteriormente.
 
-Entendemos que el ser humano cambia en su forma de comprender el entorno continuamente,
-por ende entendemos que el trabajo y su forma de organización también son concebidos de
-manera diferente y de esta nueva forma de organizar el trabajo vemos nacer los *coworking*.
+# Investigación y estrategia :pencil:
 
-En esta nueva estructura de trabajo surge en la era digital, por lo cual es indispensable
-que sus procesos cambien desde los mas complejos como la forma de organizar y estructur sus
-datos, hasta los más simples como el acceso de *visitantes*.
+Como empresa tecnológica proponemos desarrollar un app web que reúna la información de invitados, capture sus fotos y notifique a los anfitriones de la llegada de un visitante, todo desde un iPad.
 
-## Objetivos del cliente:
+## Objetivos del negocio
 
-*Reinventar el proceso de registro de visitantes para mejorar sus servicios, sorprender a
-los visitantes con una primera impresión moderna de la marca y por ende competir con un
-coworking de mayor magnitud.
+ - Reinventar el proceso de registro de visitantes para mejorar sus servicios, sorprender a los visitantes con una primera impresión moderna de la marca y por ende competir con un coworking de mayor magnitud.
 
-*Optimizar el inicio de sesión de los visitantes, aumentando la eficiencia de recepción, sin
-importar el numero de visitantes con los que se cuente por día identificando facilmente quién
-está autorizado para estar en el sitio.
+ - Optimizar el inicio de sesión de los visitantes, aumentando la eficiencia de recepción, sin importar el numero de visitantes con los que se cuente por día identificando fácilmente quién está autorizado para estar en el sitio.
 
-## Identificacíon del usurio
+## Usuario
 
-# Historias de usuario
-*
+ Estudiamos a los usuarios que van a utilizar nuestro producto y definimos nuestra audiencia potencial mediante usuarios ficticios.
 
-## Objetivos de aprendizaje
+| Historias de usuario|
+|--|--|
+|Historia de usuario **No. 1**|
+|**Como** visitante de un coworking **quiero** registrarme de forma rápida y sencilla **para** acceder a mi cita en tiempo y forma.|
+|||
+|Historia de usuario **No.2**|
+|**Como** administrador de un coworking **quiero** visualizar la información de los usuarios registrados **para** llevar un control de las personas que se encuentran dentro del edificio, de manera rápida y eficaz.|
+|||
+|Historia de usuario **No.3**|
+|**Como** anfitrión en un coworking, **quiero** poder registrar rápidamente a las personas que me visitan y ser notificado en cuanto lleguen **para** no perder tiempo y poder aprovecharlo en los temas a negociar.|
 
-El objetivo principal de este proyecto es que pongas en práctica todo lo
-aprendido durante el common core, con foco en la calidad, trabajando en un
-equipo multifuncional y presentando tu solución a una audiencia.
+### Escenarios y casos de uso
 
-## Consideraciones generales
+ Definimos los procesos que realizan los usuarios en sus contextos reales, a continuación mostramos un ejemplo:
 
-Para completar este proyecto deberás trabajar en un equipo de tres y seguir las
-siguientes consideraciones:
+![Escenario de registro](src/images/escenario.png)
 
-### 1. Planificación y organización
+### Visitas de campo
 
-#### Roles, squad multifuncional
+#### Cliente incógnito
+Realizamos visitas para analizar a los usuarios utilizando un producto en un contexto real, el *coworking* que tomaremos como principal comparación es [Forum Naucalpan](http://forumnaucalpan.com.mx/)
 
-Cada integrante del equipo debe asumir alguno de los siguientes "roles" (\*),
-liderando las siguientes áreas de trabajo:
+![registro](src/images/forum.png)
+![registro](src/images/recepcion.png)
 
-1. Diseñadora UX
-   * Diseñar la experiencia de la aplicación (flujo, interacción, etc.).
-   * Identificar, documentar y priorizar las historias de usuario.
-   * Crear el diseño visual de la interfaz.
-2. Desarrolladoras Front-end
-   * Implementar la interfaz de usuario diseñada (HTML/CSS/JS).
-   * Deben dividirse las funcionalidades entre las dos desarrolladoras.
-   * Todas los desarrollos deben incluir pruebas unitarias.
+#### Entrevistas
+ Para poder identificar y empatizar con nuestro usuario final se realizaron 5 entrevistas con personas de diferentes roles en el proceso de registro:
 
-(\*) Al no haber rol de Product Manager, las responsabilidades de gestión son
-compartidas entre todas las integrantes.
+1. El señor *Ricardo Diaz* anfitrión en el *coworking* Forum Naucalpan
+[Audio de entrevista](audio.com)
 
-Planificación inicial
+2. La señorita *Adriana Garnica* visitante en el Tecnofin
 
-Es muy importante que al dividirse/distribuir/repartir el trabajo, lo hagan
-pensando de manera ágil y no en cascada. Es decir, si una de ustedes está
-esperando a que otra termine "su parte" para empezar a trabajar, algo anda mal,
-¡[eso se parece a la organización del trabajo industrial!](https://media.giphy.com/media/OQ872dEsRi8cU/source.gif).
-Todas son responsables del producto final y todas pueden (y deben) colaborar en
-el diseño, el desarrollo y la planificación.
+3. El señor *Diego Cervantes* anfitrión en Teconfin
 
-TIPS:
+4. La señorita *Miriam López*, encargada en recepción del *coworking* **Terminal 1**, nos comenta que el proceso de registro de un visitante consta de 2 partes primero con vigilancia que los canaliza y anota sus datos en una libreta, para posteriormente pasar con ella y volver a registrar sus datos en otra libreta, se llama por teléfono a la persona que visitan y si se autoriza el acceso la persona entra o espera en recepción. Algunos de los inconvenientes encontrados son que al ser 36 oficinas es complicado memorizar o buscar el número de extensión para notificar a una persona que tiene un visitante o que no respondan el teléfono y el visitante tenga que esperar largo tiempo en recepción.
+ [Audio de entrevista](audio.com)
 
-* Recuerda a nuestras nuevas BFFs, [las historias de usuario](http://jmbeas.es/guias/historias-de-usuario/)
-* Ten siempre en mente evitar el desperdicio. Por ejemplo: ¿de qué sirve que
-  tengas el prototipo del 100% de un proyecto en Figma (alta definición) si
-  solamente implementas el 50% del proyecto? El otro 50% del prototipo se podría
-  considerar como desperdicio.
-* Limitar el trabajo en progreso. Si son 3 personas, procuren no tener más de 3
-  tareas a la vez en "doing".
-* ¿Estás segura de que quieren seguir invirtiendo más minutos de tu vida (que no
-  volverán) en discutir los colores del logotipo?
-  [Aquí hay algo que te puede ayudar a decidir](https://play.google.com/store/apps/details?id=com.flip.war_daddy.flip_coin).
+5. El señor *Serafín Nava* encargado de seguridad en la *casa de cultura:* "*Jesús Romero Flores*"
+[Audio de entrevista](audio.com)
 
-### 2. Detalles sobre la implementación
+ ### Benchmark
+Realizamos un estudio de mercado y/o de productos similares para realizar o re-diseñar.
 
-* La lógica del proyecto debe estar implementada completamente en JavaScript
-  (ES6), HTML y CSS.
-* Está permitido usar librerías o frameworks tanto de CSS como de JS, pero no es
-  obligatorio. Elige bien las batallas que quieres luchar.
-* En este proyecto, no contamos con un boilerplate, por lo que deberás definir
-  la estructura de carpetas y archivos que consideres necesaria, puedes guiarte
-  de los proyectos anteriores.
-* Los tests y el setup necesario para ejecutarlos serán hechos enteramente por
-  ti.
-* Para armar las interfaces visuales utiliza como base alguna de estas guías de
-  componentes:
-  * [Guía Desktop 1](https://www.figma.com/file/F3aUqpHWOfZsEQifTPIleXo6/material-kit-free)
-  * [Guía Desktop 2](https://www.figma.com/file/S39H0B1LOnaVICIUiApFTfoP/_Style-Guide---Desktop---Style-Guide)
-  * [Guía Mobile 1](https://www.figma.com/file/00VTwmTNvLVaBLkxrMFbT8/Google-Material-Design)
-  * [Guía Mobile 2](https://www.figma.com/file/O2Xraz3mraQHvevNsicMl91V/ejemplos-2)
-* Guardar la data de los visitantes de forma remota usando [Firebase](https://firebase.google.com/).
-* A nivel de arquitectura:
-  * El uso de Firebase implica que debes trabajar bajo una arquitectura
-    serverless.
-  * Te sugerimos que desacoples el proyecto en componentes y manejo de estados
-    para que trabajes de forma ordenada y facilite la implementación de tus
-    tests. Revisa la [charla](https://www.youtube.com/watch?v=g_BxnUJTUSk) y
-    el [blog post](https://medium.com/laboratoria-developers/arquitectura-de-interfaces-web-parte-1-a41053c2a1f2)
-    de Lupo sobre este tema ;)
+# Diseño de Interacción :books:
 
-### 3. Tiempo
+A partir de todos los datos obtenidos en la fase anterior, vamos a proceder a su organización y categorización.
 
-Tendrán 1 semana para trabajar en este proyecto. Este tiempo es un poco corto
-para iterar y hacer las ceremonias que usualmente hacemos. Puedes elegir hacer
-tus sprints de 2-3 días o simplemente correr un único sprint con "hitos" durante
-la semana. Es decisión del equipo. Lo que sí les recomendamos es asegurar que
-usan bien los dailys, esto les permitirá hacer "mini" iteraciones cada 24 horas.
+## Navegación y usabilidad
 
-## Entregables obligatorios
+Definimos todos los flujos funcionales que tendrá nuestra app web tanto del lado del usuario para el registro, como para el administrador con la consulta de los datos:
 
-Los criterios mínimos de aceptación para considerar que has completado este
-proyecto son:
+#### Flujo de usuario para registro:
 
-### Diseño
+![registro](src/images/flujo.jpg)
 
-1. Haber realizado y documentado (con fotos, videos, aprendizajes, etc.)  al
-   menos 3 entrevistas con usuarios diferentes.
-2. Haber probado de "cliente incógnito" el registro de visitas en WeWork y
-   compararla con tu solución y con la referencia que te brindaron ([Envoy](https://envoy.com/)).
-3. Entregar un prototipo clickeable de alta fidelidad hecho en [Figma](https://www.figma.com/)
-   u otro editor gráfico como Illustrator, Photoshop, PowerPoint, Keynote, etc.
-   linkeado con [Marvel](https://marvelapp.com/) / [Invision](https://www.invisionapp.com/).
-4. Haber hecho y documentado (con fotos, videos, aprendizajes, lista de cambios
-   realizados, etc.) sesiones de testing del prototipo con usuarios.
+#### Flujo de administración para consulta de visitantes:
 
-### Implementación
+![registro](src/images/flujoadmin.jpg)
 
-Tu producto final debe estar desplegado en la web y, como mínimo, debe:
+# Diseño Visual :art:
 
-1. Permitir al usuario visitante registrarse con sus datos personales,
-   incluyendo su foto.
-2. Permitir al usuario visitante seleccionar a la persona a quien viene a
-   visitar.
-3. Notificar a la persona a quien vienen a visitar. Para esto te recomendamos
-   revisar:
-   * Los servicios de [Sendgrid](https://sendgrid.com/)
-   * El [API de Mandrill](https://mandrillapp.com/docs/) para mandar correos de
-     forma automática
-   * El [API de notificaciones de HTML 5](https://developer.mozilla.org/en-US/docs/Web/API/notification)
-4. Permitir al usuario administrador visualizar la data de los visitantes,
-   incluyendo la fecha y hora de registro de cada uno
-5. Los tests unitarios deben cubrir un mínimo del 70% de statements, functions y
-   lines, y un mínimo del 50% de branches.
+En un proceso de diseño colaborativo (en equipo) decidimos nombrar a nuestra marca **Easy Visit** y asignar una gama de colores en azules y grises para denotar armonía y seriedad.
 
-### Presentación
+![Propuesta de diseño](src/images/diseno.png)
 
-Deberás hacer dos presentaciones ante un jurado que te dará feedback
-inmediatamente. La primera será a mitad de semana para compartir tu avance y la
-segunda será al final de la semana para compartir tu producto final.
+## Logotipo
 
-Las reglas para las dos presentaciones son:
+El logotipo de *Easy Visit* se compone de de una computadora con un símbolo de check para dar una sensación de coherencia y fijar en la memoria el propósito de la marca.
 
-1. Tendrás 3 minutos de presentación, ni un segundo más.
-2. Habrán 2 minutos para preguntas del jurado.
-3. Te recomendamos que la mayoría del tiempo lo enfoque en demostrar cómo se
-   utiliza tu producto, el cual debe estar desplegado en la web.
-   * NO se permite presentar cosas en tu local ni videos previamente grabados.
-   * NO inviertas tiempo presentándote, ni listando al equipo, ni dando una
-     introducción que ya el jurado conoce. Como al hacer el producto, en la
-     presentación también debes priorizar qué decir.
-   * NO utilices slides de powerpoint, enfócate en presentar tu DEMO.
-   * Durante el DEMO, enfócate en narrar y explicar el valor que tu producto le
-     brinda al usuario.
-   * Cuida tu lenguaje no verbal; recuerda mirar al público y tener un tono de
-     voz adecuado para que toda la audiencia te pueda escuchar.
-   * Idealmente debe presentar una sola integrante del equipo. Si deciden que
-     presenta más de una persona, asegúrense de haber coordinado bien el flujo
-     de la presentación.
+![Logotipo](src/images/logotipo.png)
 
-## Hacker edition
+## Colores
 
-Features/características extra sugeridas:
+El color azul es el que más predomina en el diseño debido a que según la psicología del color, el azul simboliza armonía, fidelidad, simpatía, paz, serenidad, confianza, comunicación, etc. y precisamente en un proceso de registro que puede llegar a estresar al usuario el propósito es brindarle la mayor comodidad y agrado posibles en el proceso.
 
-* Como el WiFi a veces es nuestro peor enemigo, ¿es posible que tu aplicación
-  pueda, sin Internet, registrar los datos del visitante, guardar los datos
-  localmente y cuando tenga Internet mandarlos a la base de datos? Si te animas
-  a hacer esto dale una revisada a los siguientes recursos:
-  * [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
-  * [Offline first manifesto](http://offlinefirst.org/)
-* También sería ideal poder registrar la firma del visitante en el registro.
-* Sería genial también permitir generar un "pase" para el visitante, así
-  fácilmente a la vista se sabe quién está de visita.
-* Al administrador le interesa tener un dashboard de "analíticas" de los
-  visitantes: # de visitantes por día, horarios frecuentes de visita, a quién
-  vienen a visitar, etc.
+![Colores](src/images/colores.png)
 
-## Anexo I: Construyendo un MVP
+## Prototipos de alta fidelidad
 
-Una modelo mental común para representar el desarrollo de productos es
-visualizarlo como una pirámide: el producto que construyes consiste en una serie
-de funcionalidades que le dan beneficios al usuario, los cuales le generan
-valor. El detalles está en que no todas las funcionalidades que creas le agregan
-la misma cantidad de valor al usuario. Es más, muchas funcionalidades le agregan
-cero valor. Son cosas que creemos que generan valor, pero que no terminan
-haciéndolo (recuerda que vivimos en un mundo incierto, donde no podemos
-predecir). Por lo tanto, al definir tu producto mínimo viable (MVP), tu misión
-es crear las mínimas funcionalidades que maximicen el valor que entregas. Menos
-es más ;)
+### Vistas de registro
+![Prototipos de alta fidelidad](src/images/altafidelidad1.png)
+![Prototipos de alta fidelidad](src/images/altafidelidad2.png)
+![Prototipos de alta fidelidad](src/images/altafidelidad3.png)
+![Prototipos de alta fidelidad](src/images/altafidelidad4.png)
+![Prototipos de alta fidelidad](src/images/altafidelidad5.png)
 
-![Construyendo un MVP](https://lh5.googleusercontent.com/Y0pAAgnYJcYs0DCK2vo28H0709vIJ4OvMkGs5P1xCS4_6k3XQS0jqOA3KQLKsFX1SrCcOqab9jMwuTCRZVATELmlhFr5VihRIrftA5Fj8q0PFQ8JDoktKfHTrZX5CG4ASzv7vyxL)
+## Vistas de administración
+![Prototipos de alta fidelidad](src/images/altafidelidad6.png)
+![Prototipos de alta fidelidad](src/images/altafidelidad7.png)
 
-## Anexo II: Envío de emails
+## [Prototipo clickable](https://marvelapp.com/9b9ijf7)
 
-Para poder hacer envíos de email necesitas un servicio. Aquí te dejamos un
-acceso a una cuenta de [Mandrill](https://mandrillapp.com/) de Laboratoria para
-que la puedas utilizar en tu proyecto.
+# Validación :heavy_check_mark:
 
-```text
-Host: smtp.mandrillapp.com
-Port: 587
-SMTP Username: Laboratoria.La
-SMTP Password: Te lo daremos antes de comenzar
-```
+En esta etapa nuestro objetivo es comprobar la calidad del diseño propuesto.
+
+## Test con usuarios
+
+Es una prueba de usabilidad nos apoyamos como primer herramienta de la observación y análisis de cómo un grupo de usuarios reales utilizan nuestra app web, anotando los problemas de uso con los que se encuentran para poder solucionarlos posteriormente, a continuación los resultados obtenidos:
