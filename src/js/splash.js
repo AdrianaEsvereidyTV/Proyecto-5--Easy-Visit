@@ -1,5 +1,8 @@
-const btnRegistro = document.getElementById('btnRegistro');
+const timeout = () => {
+window.setTimeout("redirect()",2500)}
 
-btnRegistro.addEventListener('click', () => {
-  window.location.href = 'views/registro.html';
-});
+window.onload = timeout;
+
+const redirect = () => {
+window.location="views/registro.html"
+return}

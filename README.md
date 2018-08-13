@@ -22,16 +22,19 @@ Como empresa tecnológica proponemos desarrollar un app web que reúna la inform
 
  Estudiamos a los usuarios que van a utilizar nuestro producto y definimos nuestra audiencia potencial mediante usuarios ficticios.
 
-| Historias de usuario|
+### Historias de usuario
+
+| Historia de usuario **No. 1** |
 |--|--|
-|Historia de usuario **No. 1**|
-|**Como** visitante de un coworking **quiero** registrarme de forma rápida y sencilla **para** acceder a mi cita en tiempo y forma.|
-|||
-|Historia de usuario **No.2**|
-|**Como** administrador de un coworking **quiero** visualizar la información de los usuarios registrados **para** llevar un control de las personas que se encuentran dentro del edificio, de manera rápida y eficaz.|
-|||
-|Historia de usuario **No.3**|
-|**Como** anfitrión en un coworking, **quiero** poder registrar rápidamente a las personas que me visitan y ser notificado en cuanto lleguen **para** no perder tiempo y poder aprovecharlo en los temas a negociar.|
+| **Como** visitante de un coworking **quiero** registrarme de forma rápida y sencilla **para** acceder a mi cita en tiempo y forma. |
+
+| Historia de usuario **No. 2** |
+|--|--|
+| **Como** administrador de un coworking **quiero** visualizar la información de los usuarios registrados **para** llevar un control de las personas que se encuentran dentro del edificio, de manera rápida y eficaz. |
+
+| Historia de usuario **No.3** |
+|--|--|
+| **Como** anfitrión en un coworking, **quiero** poder registrar rápidamente a las personas que me visitan y ser notificado en cuanto lleguen **para** no perder tiempo y poder aprovecharlo en los temas a negociar. |
 
 ### Escenarios y casos de uso
 
