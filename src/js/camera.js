@@ -121,3 +121,9 @@ function hideUI() {
   snap.classList.remove('visible');
   errorMessage.classList.remove('visible');
 };
+
+let btn-camera = document.getElementById('sending');
+
+btn-camera.addEventListener('click', function(){
+  window.location.href = '../views/badge.html';
+});
