@@ -17,7 +17,7 @@ navigator.getMedia = (navigator.getUserMedia ||
 
 
 if (!navigator.getMedia) {
-  displayErrorMessage('Tu navegador no soporta la funcion getMedia.');
+  displayErrorMessage('Tu navegador no soporta la funcion getMedia');
 } else {
   // Solicitamos la camara
   navigator.getMedia(
